@@ -1,1 +1,16 @@
 <h1> New Order </h1>
+<%= form_for :order, url: orders_path do |f| %>
+<p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+</p>
+<p>
+    <%= f.label :Order %><br>
+    <%= f.text_area :Order %>
+</p>
+
+<p>
+    <%= f.submit %>
+</p>
+
+<% end %>
