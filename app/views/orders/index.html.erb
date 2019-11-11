@@ -1,0 +1,16 @@
+<h1>Listing orders</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Order</th>
+  </tr>
+ 
+  <% @orders.each do |order| %>
+    <tr>
+      <td><%= order.name %></td>
+      <td><%= order.request %></td>
+      <td><%= link_to 'Show', order_path(order) %></td>
+    </tr>
+  <% end %>
+</table>
