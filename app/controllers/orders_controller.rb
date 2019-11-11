@@ -18,8 +18,6 @@ class OrdersController < ApplicationController
         @orders = Order.all
     end
 end
-
-
 private
 def order_params 
     params.require(:order).permit(:name, :request)
