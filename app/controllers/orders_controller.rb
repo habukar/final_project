@@ -1,13 +1,17 @@
 class OrdersController < ApplicationController
     def new
+        @order = Order.new
     end
 
      def create
       @order = Order.new(order_params)
      
-      @order.save
-      redirect_to @order
-        
+    if @order.save
+        redirect_to @order
+    else
+        render 'new'
+    end
+    
      end
     
     def show 
@@ -17,6 +21,7 @@ class OrdersController < ApplicationController
     def index
         @orders = Order.all
     end
+    
 end
 private
 def order_params 
