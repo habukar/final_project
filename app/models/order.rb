@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-    validates :name, presence: true, length: {minimum: 15}
-    validates :request, presence: true, length: {minimum: 1000}
+    validates :name, presence: true, length: {minimum: 1}
+    validates :request, presence: true, length: {minimum: 1}
 
 end
