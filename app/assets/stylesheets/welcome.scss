@@ -6,29 +6,53 @@ body {
     background-color: #aca5a5;
     font-family: Sans-Serif;
 }
-h1 {
-    font-size:32px;
+header {
+    font-size:40px;
     color:white;
     font-family: Sans-Serif;
     background-color: #2038ec;
     text-align: center;
-    padding:30px ;
+
    
 }
 
 p{
-    font-size:20px;
+    font-size:40px;
     font-family: Sans-Serif;
-    color:white;
+    color: black; 
     text-align: center;
+ 
+  
     
 }
-
-
-
-form {
-      font-size:18px;
-      text-align: center;
-      font-family: Sans-Serif; 
+body{
+    background-color: lightgray;
 }
-	
+
+.nav{
+    font-size: 24px;
+    background-color: gray ;
+    list-style: none;
+    padding: 10px;
+}
+
+
+header {
+
+	padding: 30px;
+    font-family: Sans-Serif;
+    background-color: steelblue;
+    text-align: center;
+
+   
+}
+
+footer {
+
+	padding: 30px;
+    font-family: Sans-Serif;
+    background-color: steelblue;
+    text-align: center;
+
+   
+}

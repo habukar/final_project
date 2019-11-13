@@ -1,5 +1,9 @@
+<header> BEHIND THE SCENES 
+</header>
+<ul class="nav">
+<li> <%= link_to 'New order', new_order_path %></li>
+</ul>
 <h1>Listing orders</h1>
- <%= link_to 'New order', new_order_path %>
 <table>
   <tr>
     <th>Name</th>
@@ -10,12 +14,17 @@
     <tr>
       <td><%= order.name %></td>
       <td><%= order.request %></td>
-      <td><%= link_to 'Show', order_path(order) %></td>
-      <td><%= link_to 'Edit', edit_order_path(order) %></td>
+      <td><%= link_to 'Receipt', order_path(order) %></td>
+      <td><%= link_to 'Edit Order', edit_order_path(order) %></td>
       <td><%= link_to 'Delete',
                                   order_path(order),
                                   method: :delete,
                                   data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
+  
 </table>
+<footer>
+	
+
+</footer>
