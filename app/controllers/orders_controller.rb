@@ -5,10 +5,9 @@ class OrdersController < ApplicationController
 
      def create
       @order = Order.new(order_params)
-      byebug
-     
+      
     if @order.save
-        byebug
+    
      redirect_to @order
     else
         render 'new'

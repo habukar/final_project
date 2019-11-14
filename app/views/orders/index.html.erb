@@ -14,12 +14,12 @@
     <tr>
       <td><%= order.name %></td>
       <td><%= order.request %></td>
-      <td><%= link_to 'Receipt', order_path(order) %></td>
-      <td><%= link_to 'Edit Order', edit_order_path(order) %></td>
+      <td><%= link_to 'Receipt', order_path(order)%></td>
+      <td><%= link_to 'Edit Order', edit_order_path(order)  %></td>
       <td><%= link_to 'Delete',
-                                  order_path(order),
+                                  order_path(order), 
                                   method: :delete,
-                                  data: { confirm: 'Are you sure?' } %></td>
+                                  data: { confirm: 'Are you sure?' }, class:"a" %></td>
     </tr>
   <% end %>
   
