@@ -9,7 +9,7 @@ class OrdersController < ApplicationController
      
     if @order.save
         byebug
-        redirect_to @order
+     redirect_to @order
     else
         render 'new'
     end
