@@ -1,12 +1,11 @@
-<header> BEHIND THE SCENES 
+<header>	<img src="<%= asset_path( 'reame.png' ) %>" width = "350" height="350"  />
 </header>
 <p> Welcome to the Behind The Scenes Application! Our goal is to make it easier to order 
 at the Movies. Click Start Order to Order Now! </p>
 <ul class="nav">
-<li><%= link_to "Start Order", controller: 'orders' %></li>
+<li><%= link_to button_to("Start Order"), controller: 'orders' %></li>
 </ul>
 <body>
-	<img src="<%= asset_path( 'logo.png' ) %>" width = "800" height="800" align="middle" />
 
 
 <footer>

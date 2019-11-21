@@ -1,7 +1,7 @@
 <header> BEHIND THE SCENES 
 </header>
 <ul class="nav">
-<li> <%= link_to 'New order', new_order_path %></li>
+<li> <%= link_to button_to('New order'), new_order_path %></li>
 </ul>
 <h1>Listing orders</h1>
 <table>
@@ -14,12 +14,13 @@
     <tr>
       <td><%= order.name %></td>
       <td><%= order.request %></td>
-      <td><%= link_to 'Receipt', order_path(order)%></td>
-      <td><%= link_to 'Edit Order', edit_order_path(order)  %></td>
-      <td><%= link_to 'Delete',
+      <td><%= link_to image_tag("views.png"), order_path(order)%></td>
+
+      <td><%= link_to image_tag("edits.png"), edit_order_path(order)  %></td>
+      <td><%= link_to image_tag("delete.png"),
                                   order_path(order), 
                                   method: :delete,
-                                  data: { confirm: 'Are you sure?' }, class:"a" %></td>
+                                  data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
   

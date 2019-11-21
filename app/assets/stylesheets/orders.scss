@@ -104,13 +104,22 @@ input[type=button], input[type=submit]{
     cursor: pointer;
 }
 
-a{
- background-color: #4CAF50;
-   float: middle;
-   color: white;
-   padding: 5px 10px;
+img{
+    padding: 30px;
+    
+}
+
+  .button {
+  background-color: yellow;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
   text-decoration: none;
-   cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+
 }
 *{
     margin: 0;
