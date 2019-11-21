@@ -15,6 +15,7 @@
 <%= @order.request %>  $34.99
 </p>
 <h2> Reviews</h2>
+<%= render @order.reviews %>
 <% @order.reviews.each do |review| %>
 <p>
     <strong> Reviewer:</strong>
