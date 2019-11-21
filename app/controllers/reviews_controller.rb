@@ -3,7 +3,14 @@ class ReviewsController < ApplicationController
         @order = Order.find(params[:order_id])
         @review = @order.reviews.create(review_params)
         redirect_to order_path(@order)
-end
+    end
+
+    def destroy
+         @order = Order.find(params[:order_id])
+         @review = @order.reviews.find(params[:id])
+         @review.destroy
+         redirect_to order_path(@order)
+    end
 
 private
     def review_params
