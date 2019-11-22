@@ -19,9 +19,9 @@ header {
    
 }
 p{
-    font-size:12px;
+    font-size:14px;
     font-family: Sans-Serif;
-    color: yellow; 
+    color: black; 
     text-align: left;
  
   
@@ -37,8 +37,7 @@ body{
     background-color: gray ;
     list-style: none;
     padding: 10px;
-    text-align: center;
-
+    float: center;
 }
 
 
@@ -64,7 +63,7 @@ footer {
 
 td{
     
-    font-size:20px;
+    font-size: 24px;
     font-family: Sans-Serif;
     color: black; 
     text-align: center;
@@ -74,7 +73,7 @@ td{
 }
 
 th{
-   font-size:22px;
+   font-size: 22px;
     font-family: Sans-Serif;
     color: darkblue;
     
@@ -107,58 +106,8 @@ input[type=button], input[type=submit]{
 }
 
 img{
-    padding: 30px;
+    padding: 40px;
     
 }
 
-  .button {
-  background-color: yellow;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
+ 

@@ -2,8 +2,19 @@
 </header>
 <p> Welcome to the Behind The Scenes Application! Our goal is to make it easier to order 
 at the Movies. Click Start Order to Order Now! </p>
+
 <ul class="nav">
 <li><%= link_to button_to("Start Order"), controller: 'orders' %></li>
+<li>
+    <% if current_user %>
+        Logged in as <%= current_user.name %>
+        <%= link_to "Log Out", logout_path %>
+    <% else %>
+        <%= link_to button_to("Sign Up"), signup_path %>
+        
+      <%= link_to button_to("Log In"), login_path %>
+    <% end %>
+</li>
 </ul>
 <body>
 
