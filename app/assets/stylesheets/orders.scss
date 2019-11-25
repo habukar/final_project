@@ -32,7 +32,7 @@ body{
     background-color: lightgray;
 }
 
-.nav{
+ul{
     font-size: 24px;
     background-color: gray ;
     list-style: none;
@@ -110,4 +110,18 @@ img{
     
 }
 
- 
+.nav li {
+  background-color: gray; /* Green background */
+  color: white; /* White text */
+  padding: 10px 175px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left ; /* Float the buttons side by side */
+}
+.nav li:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+.nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
