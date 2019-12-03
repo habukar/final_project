@@ -1,5 +1,8 @@
-<p id="alert"><%= alert %> </p>
+
+<header>	<img src="<%= asset_path( 'reame.png' ) %>" width = "350" height="350"  />
+</header>
 <h1>Login</h1>
+<p id="alert"><%= alert %> </p>
 <%= form_tag sessions_path do |form| %>
 <div class= "field">
     <%= label_tag :email %>
@@ -13,3 +16,6 @@
     <%= submit_tag "Login" %>
 </div>
 <% end %>
+<footer>
+     © Team6 Copyright
+</footer>
